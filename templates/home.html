@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Paddlix — Pickleball Equipment{% endblock %}
+{% block content %}
+<header class="site-header">
+  <a class="brand" href="{% url 'home' %}">Paddlix</a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#products">Products</a><a href="#sale">Sale</a><a href="#stores">Stores</a><a href="#support">Support</a>
+  </nav>
+  <div class="header-tools"><button class="language">EN <span>|</span> SP</button><button class="cart" aria-label="Shopping cart"><img src="{% static 'img/shopping-cart.svg' %}" alt=""></button></div>
+  <button class="menu-button" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">DISCOVER THE FUTURE</p><h1>Pickleball Revolution:</h1><p class="hero-subtitle">Explore our selection and join the game today!</p><a class="outline-button" href="#products">EXPLORE</a></div>
+</section>
+
+<section class="products section" id="products">
+  <div class="section-heading"><h2>High-performance paddles</h2><a href="#">View all</a></div>
+  <div class="product-grid">
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/b488f4b0-6f65-421a-93a2-b57b2d4cf5cc.png" alt="AcePro Elite Paddle"><div><h3>ACEPRO ELITE PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/921d69c0-2a20-4804-9518-3219641e592c.png" alt="Velocity Carbon Paddle"><div><h3>VELOCITY CARBON PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/18b7e5bf-4e35-4af7-a674-6c094ceecdeb.png" alt="Titanium Flex Paddle"><div><h3>TITANIUM FLEX PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/7e386a65-9af0-46a7-941a-10c3f17f1763.png" alt="Raptor Series Paddle"><div><h3>RAPTOR SERIES PADDLE</h3><strong>USD 249.00</strong></div></article>
+  </div>
+</section>
+
+<section class="feature feature-one"><div><p>OUR GUILD</p><h2>How to choose the right paddle</h2><a class="outline-button" href="#">LEARN MORE</a></div></section>
+<section class="feature feature-two"><div><p>NEW TECHNOLOGY</p><h2>Shock-absorption technology</h2><a class="outline-button" href="#">EXPLORE</a></div></section>
+
+<section class="products section best" id="sale">
+  <div class="section-heading"><h2>Best-sellers</h2><a href="#">View all</a></div>
+  <div class="product-grid">
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/b488f4b0-6f65-421a-93a2-b57b2d4cf5cc.png" alt="Summit Comfort Paddle"><div><h3>SUMMIT COMFORT PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/921d69c0-2a20-4804-9518-3219641e592c.png" alt="Strikeforce Paddle"><div><h3>STRIKEFORCE PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/18b7e5bf-4e35-4af7-a674-6c094ceecdeb.png" alt="Zenith Control Paddle"><div><h3>ZENITH CONTROL PADDLE</h3><strong>USD 249.00</strong></div></article>
+    <article class="product-card"><img src="https://www.figma.com/api/mcp/asset/7e386a65-9af0-46a7-941a-10c3f17f1763.png" alt="PrecisionMax Paddle"><div><h3>PRECISIONMAX PADDLE</h3><strong>USD 249.00</strong></div></article>
+  </div>
+</section>
+
+<section class="collections" id="stores"><h2>Collections</h2><div class="collection-grid"><div class="collection beginner"><h3>For beginner</h3><a class="outline-button" href="#">SHOP NOW</a></div><div class="collection pro"><h3>Pro series</h3><a class="outline-button" href="#">SHOP NOW</a></div></div></section>
+<section class="feature feature-three"><div><p>WHY US?</p><h2>Satisfaction guarantee</h2><a class="outline-button" href="#">SHOP NOW</a></div></section>
+<section class="stories"><h2>Stories</h2><div class="story-grid"><article><img src="https://www.figma.com/api/mcp/asset/213c7c06-c633-45e0-af93-a13f60d3ddb4.png" alt=""><h3>Comparing the top brands and models</h3></article><article><img src="https://www.figma.com/api/mcp/asset/b2d5f152-bda9-44fb-8040-b77340f80a6e.png" alt=""><h3>Essential tips and techniques for beginners</h3></article><article><img src="https://www.figma.com/api/mcp/asset/36447859-4fd6-4792-a4d3-1713e141b3de.png" alt=""><h3>The ultimate guide to choosing the right paddle</h3></article></div></section>
+</main>
+
+<footer id="support"><div class="newsletter"><div><h3>Subscribe for latest updates</h3><p>Enter your email</p></div><form><input type="email" placeholder="Email address" aria-label="Email address"><button type="submit">SUBSCRIBE</button></form></div><div class="footer-links"><div><h4>Products</h4><a href="#products">Paddles</a><a href="#">Accessories</a><a href="#">Shoes</a><a href="#">Reviews</a></div><div><h4>Support</h4><a href="#">Contact us</a><a href="#">FAQ</a><a href="#">Warranty</a></div><div><h4>Sale</h4><a href="#">Up to 15%</a><a href="#">Up to 25%</a><a href="#">Shop all sale</a></div></div></footer>
+{% endblock %}
